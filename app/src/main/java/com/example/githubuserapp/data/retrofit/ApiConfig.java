@@ -8,6 +8,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiConfig {
+    public static final String GITHUB_TOKEN = System.getenv("GITHUB_TOKEN");
+
     public static ApiService getApiService() {
         HttpLoggingInterceptor loggingInterceptor;
 
